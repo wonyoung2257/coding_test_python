@@ -3,13 +3,16 @@ from collections import deque
 def bfs(graph, start, visited):
 
     queue = deque([start])
+    print("queue", queue)
     visited[start] = True
+    print(visited)
 
     while queue:
-        v= queue.popleft()
+        v = queue.popleft()
         print(v, end=' ')
 
         for i in graph[v]:
+            print("i = ",i)
             if not visited[i]:
                 queue.append(i)
                 visited[i] = True
