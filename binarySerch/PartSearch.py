@@ -28,3 +28,9 @@ for i in M_array:
         print("no", end=" ")
     else:
         print("yes", end=" ")
+
+for i in M_array:
+    if i in N_array:
+        print("yes", end = " ")
+    else:
+        print("no", end= " ")
