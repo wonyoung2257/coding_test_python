@@ -1,9 +1,8 @@
 # 이진탐색 떡볶이 만들기 문제
 import sys
 def dinary_search(array, target, start, end, hight):
-
     while start <= end:
-        mid = (start + end) //2
+        mid = (start + end) // 2
         minus = 0
         for i in hight:
             if i-array[mid] >= 0:
