@@ -9,6 +9,7 @@ def dfs(depth):
     #깊이와 M이 같다며 출력
     if depth == M:
         print(" ".join(map(str, result)))
+        return
 
     for i in range(len(visited)):
         if not visited[i]:
